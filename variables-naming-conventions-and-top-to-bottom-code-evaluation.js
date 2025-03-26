@@ -24,9 +24,31 @@ Things to reflect on:
   
 */
 
+// Problems with code: bad variable names (a, b, c, & d), didn't use camelCase, could've given more context with names to tell us what they are
+
+// Old code
 let a = "Alice";
 let b = 5;
 let c = 20;
 let d = a + " bought " + b + " items for $" + c + ".";
 
 console.log(d);
+
+//New code
+let name = "Alice";
+let numberOfItems = 5;
+let cost = "20";
+let recap = name + " bought " + numberOfItems + " items for $" + cost + "."; 
+
+console.log(recap);
+
+// Enhance Program
+
+let custName = "Alice";
+let totalItems = 5;
+let pricePerItem = 4;
+let total = totalItems * pricePerItem;
+
+let purchase = custName + " bought " + totalItems + " items at $" + pricePerItem + " each, totalling $" + total + ".";
+
+console.log(purchase);
